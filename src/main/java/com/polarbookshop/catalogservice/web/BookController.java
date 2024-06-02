@@ -57,4 +57,8 @@ public class BookController {
     public Book get(@PathVariable String isbn, @Valid @RequestBody Book book) {
         return bookService.editBookDetails(isbn, book);
     }
+
+    public Void demo() {
+        return null;
+    }
 }
