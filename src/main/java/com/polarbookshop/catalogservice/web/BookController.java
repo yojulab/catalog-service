@@ -53,4 +53,8 @@ public class BookController {
         return bookService.editBookDetails(isbn, book);
     }
 
+    @GetMapping("{isbn}")
+    public Book get(@PathVariable String isbn, @Valid @RequestBody Book book) {
+        return bookService.editBookDetails(isbn, book);
+    }
 }
